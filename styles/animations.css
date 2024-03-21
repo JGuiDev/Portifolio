@@ -1,0 +1,26 @@
+@keyframes communication {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes english {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 33.33%;
+    }
+}
+
+@keyframes workTeam {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

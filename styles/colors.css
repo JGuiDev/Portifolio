@@ -1,0 +1,16 @@
+:root{
+    --bg-color: #0D0D0D;
+    --blue-primary: #0477BF;
+    --text-color: #fff;
+    --light-blue: #04B2D9;
+    --second-light-blue: #049DD9;
+
+    --logo-html: #e34c26;
+    --logo-css: #2965f1;
+    --logo-js: #f0db4f;
+    --logo-node: #3c873a;
+    --logo-react: #61dafb;
+    --logo-angular: #dd1b16;
+    --logo-git: #F1502F;
+    --logo-github: #24292e;
+}
