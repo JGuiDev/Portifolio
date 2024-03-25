@@ -37,6 +37,7 @@ skills.forEach(skill => {
     skill.addEventListener("mouseover", () => {
         
         textContent.classList.remove('default-text')
+        textContent.classList.add('enterSkill')
         if(skill.classList.contains('html')){
             textContent.innerHTML = `
             Como desenvolvedor HTML intermediário, domino a estruturação avançada de documentos, incluindo elementos semânticos como < header > e < footer >. Tenho habilidade em CSS para criar designs responsivos e estilos atraentes. Além disso, estou familiarizado com frameworks como Bootstrap e tenho conhecimentos básicos em JavaScript para adicionar interatividade às páginas. Sempre busco aprimorar minhas habilidades e explorar novas técnicas e tecnologias.
@@ -49,13 +50,9 @@ skills.forEach(skill => {
             textContent.innerHTML = `
             Como um desenvolvedor com habilidades intermediárias em JavaScript, eu entendo bem as principais estruturas e padrões da linguagem, incluindo como mexer no DOM, usar APIs externas e criar coisas interativas. Estou sempre de olho em novas bibliotecas e frameworks para ficar atualizado e ser capaz de resolver problemas de uma forma criativa e eficaz. Essa habilidade de aplicar conceitos avançados me permite trabalhar bem em equipe ou sozinho, entregando soluções sólidas e que crescem com o projeto.
             `
-        } else if(skill.classList.contains('node')){
+        } else if(skill.classList.contains('ts')){
             textContent.innerHTML = `
-            Como alguém que está começando a explorar o Node.js, estou me familiarizando com os conceitos fundamentais dessa tecnologia, como manipulação de arquivos, criação de servidores web e uso de módulos npm. Estou em constante aprendizado, explorando novas funcionalidades e técnicas para expandir meu conhecimento e habilidades nessa plataforma. Embora ainda esteja nos estágios iniciais, estou comprometido em me tornar proficientemente em Node.js, buscando recursos e orientações para desenvolver soluções eficazes e escaláveis para projetos futuros.
-            `
-        } else if(skill.classList.contains('react')){
-            textContent.innerHTML = `
-            Como alguém que está iniciando com React, estou explorando os conceitos básicos dessa biblioteca, como componentes, estado e props. Estou me dedicando a entender como criar interfaces de usuário dinâmicas e reativas, utilizando JSX e compreendendo o fluxo de dados unidirecional. Estou animado para aprender mais sobre o desenvolvimento de aplicativos web modernos com React e estou comprometido em expandir minhas habilidades através da prática e da exploração de recursos e tutoriais disponíveis.
+            Estou atualmente focado em aprimorar meus conhecimentos em Angular e estou dedicando tempo ao estudo da linguagem TypeScript para enriquecer minha experiência. Possuo habilidades sólidas na integração de APIs com o frontend, utilizando serviços e observables para dinamizar a manipulação de dados. Estou familiarizado com conceitos avançados, como roteamento, interceptadores HTTP e o lazy loading de módulos, visando otimizar o desempenho das aplicações. Estou constantemente aprimorando minhas habilidades, explorando novas técnicas e padrões de design, com o objetivo de desenvolver aplicações robustas e eficientes. Estou confiante em minha capacidade de enfrentar desafios mais complexos e de contribuir de forma significativa para projetos em Angular.
             `
         } else if(skill.classList.contains('angular')){
             textContent.innerHTML = `
@@ -75,6 +72,7 @@ skills.forEach(skill => {
     })
 
     skill.addEventListener('mouseout', () => {
+        textContent.classList.remove('enterSkill')
         textContent.classList.add('default-text')
         textContent.innerHTML = '/* Passe o mouse sobre as tecnologias para ver a descrição. */'
     })

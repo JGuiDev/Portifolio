@@ -113,7 +113,7 @@ nav ul.list li.item:hover {
 }
 
 .home .home-message h1 {
-  font-size: 34px;
+  font-size: 50px;
 }
 
 .home .home-message h1 > span {
@@ -132,12 +132,12 @@ nav ul.list li.item:hover {
 }
 
 .home .home-message .socials .social {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: 35px;
   cursor: pointer;
   border-radius: 50%;
   transition: 0.3s;
@@ -222,13 +222,12 @@ nav ul.list li.item:hover {
     align-items: center;
 }
 
-.content-me .right i{
-    width: 300px;
-    height: 300px;
+.content-me .right img{
+    width: 350px;
+    height: 350px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100px;
     background-color: var(--blue-primary);
     border-radius: 50%;
 }
@@ -387,43 +386,18 @@ nav ul.list li.item:hover {
   align-items: center;
   border-radius: 6px;
   cursor: pointer;
-  transition: 0.3s all;
 }
 
-.skills .languages > .language i {
-  font-size: 2.5rem;
+.skills .languages > .language img {
+  width: 100%;
+  height: 100%;
+  opacity: .5;
+  transition: .3s all;
 }
 
-.skills .languages > .language.html:hover {
-  background-color: var(--logo-html);
-}
-
-.skills .languages > .language.css:hover {
-  background-color: var(--logo-css);
-}
-
-.skills .languages > .language.js:hover {
-  background-color: var(--logo-js);
-}
-
-.skills .languages > .language.node:hover {
-  background-color: var(--logo-node);
-}
-
-.skills .languages > .language.react:hover {
-  background-color: var(--logo-react);
-}
-
-.skills .languages > .language.angular:hover {
-  background-color: var(--logo-angular);
-}
-
-.skills .languages > .language.git:hover {
-  background-color: var(--logo-git);
-}
-
-.skills .languages > .language.github:hover {
-  background-color: var(--logo-github);
+.skills .languages > .language img:hover{
+  opacity: 1;
+  transform: scale(1.1);
 }
 
 .skills .content-language {
@@ -441,6 +415,11 @@ nav ul.list li.item:hover {
   line-height: 32px;
   font-size: 14px;
 }
+
+.skills .content-language p.enterSkill{
+  animation: enterSkill .5s linear;
+}
+
 
 .skills .content-language p.default-text {
   color: gray;
