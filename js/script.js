@@ -1,6 +1,5 @@
 let cards = document.querySelectorAll('.card');
 
-
 // Remover classe dos cards já clicados
 function removeClassActive(){
     cards.forEach(card => {
@@ -106,3 +105,21 @@ window.sr = ScrollReveal({
 sr.reveal('.languages', {origin: 'bottom'})
 sr.reveal('.right')
 sr.reveal('.cards-projects')
+
+/* TypeWriter */
+let title = document.getElementById('title-home');
+let titleToWrite = "João Guilherme";
+let index = 0
+
+
+function typeWriter() {
+    if (index < titleToWrite.length) {
+        title.innerHTML += titleToWrite.charAt(index);
+        index++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+
+setTimeout(typeWriter, 1000);
+
